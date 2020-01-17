@@ -1,6 +1,5 @@
-.example-container {
+.all-container {
   height: 100%;
-  border: 1px solid #555;
 }
 
 .mat-icon {
@@ -9,4 +8,8 @@
 
 .containerSide{
   background-color: #FF4653;
+}
+
+.border-white {
+  border-left: 5px solid white;
 }

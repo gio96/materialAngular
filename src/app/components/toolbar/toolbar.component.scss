@@ -1,0 +1,23 @@
+.redondiar{
+  border-radius: 100px 100px 100px 100px;
+  border: 0px solid #ffffff;
+  height: 30px;
+}
+
+.redondiar-button{
+  margin-left: 1rem;
+  border-radius: 100px 100px 100px 100px;
+  border: 0px solid #ffffff;
+  height: 30px;
+  width: 60px !important;
+  background-image: -webkit-linear-gradient(left,orange, rgb(230, 49, 18));
+}
+
+
+.example-large-box {
+  background-color: yellowgreen;
+}
+
+.example-large-box {
+  height: 300px;
+}

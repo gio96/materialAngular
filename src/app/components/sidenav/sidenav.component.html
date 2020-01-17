@@ -1,53 +1,43 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened class="containerSide" >
-   <mat-list>
-    <mat-list-item>
-      <mat-icon matListIcon fontSet="material-icons-outlined">show_chart</mat-icon>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon matListIcon fontSet="material-icons-outlined">motorcycle_outline</mat-icon>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon matListIcon fontSet="material-icons-outlined">account_balance_wallet_outline</mat-icon>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon matListIcon fontSet="material-icons-outlined">sync_problem_outline</mat-icon>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon matListIcon fontSet="material-icons-outlined">forum_outline</mat-icon>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon matListIcon fontSet="material-icons-outlined">link</mat-icon>
-    </mat-list-item>
-  </mat-list>
-
-  </mat-drawer>
-  <mat-drawer-content>
-    <!--<mat-nav-list>
-      <mat-list-item routerLink="/dashboard" routerLinkActive="active">DASHBOARD </mat-list-item>
-      <mat-list-item>Bussines accounts </mat-list-item>
-      <mat-list-item>Audience Quality Score </mat-list-item>
-      <mat-list-item>Followers</mat-list-item>
-      <mat-list-item>Posts </mat-list-item>
-      <mat-list-item>Messages </mat-list-item>
-      <mat-list-item>Audience Quality </mat-list-item>
-      <mat-list-item><strong>ACTIONS</strong></mat-list-item>
-      <mat-list-item>
-        <mat-slide-toggle
-                [color]="color"
-                [checked]="checked"
-                [disabled]="disabled">
-              Followers
-          </mat-slide-toggle>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-slide-toggle
-                [color]="color"
-                [checked]="checked"
-                [disabled]="disabled">
-              Likes
-          </mat-slide-toggle>
-      </mat-list-item>
-    </mat-nav-list>-->
-  </mat-drawer-content>
-</mat-drawer-container>
+<mat-sidenav-container class="all-container">
+  <mat-sidenav mode="side" opened>
+    <section class="flex-container all-container" fxLayout="row">
+      <mat-nav-list fxLayout="column" fxLayoutAlign="start center" class="containerSide">
+        <mat-list-item class="border-white"><mat-icon matListIcon fontSet="material-icons-outlined">show_chart</mat-icon></mat-list-item>
+        <mat-list-item><mat-icon matListIcon fontSet="material-icons-outlined">motorcycle_outline</mat-icon></mat-list-item>
+        <mat-list-item><mat-icon matListIcon fontSet="material-icons-outlined">account_balance_wallet_outline</mat-icon></mat-list-item>
+        <mat-list-item><mat-icon matListIcon fontSet="material-icons-outlined">sync_problem_outline</mat-icon></mat-list-item>
+        <mat-list-item><mat-icon matListIcon fontSet="material-icons-outlined">forum_outline</mat-icon></mat-list-item>
+        <mat-list-item><mat-icon matListIcon fontSet="material-icons-outlined">link</mat-icon></mat-list-item>
+      </mat-nav-list>
+      <mat-nav-list fxLayout="column" fxLayoutAlign=" center">
+        <mat-list-item routerLink="/dashboard" routerLinkActive="active">DASHBOARD </mat-list-item>
+        <mat-list-item>Bussines accounts </mat-list-item>
+        <mat-list-item>Audience Quality Score </mat-list-item>
+        <mat-list-item>Followers </mat-list-item>
+        <mat-list-item>Posts </mat-list-item>
+        <mat-list-item>Messages </mat-list-item>
+        <mat-list-item>Audience Quality </mat-list-item>
+        <mat-list-item><strong>ACTIONS</strong></mat-list-item>
+        <mat-list-item>
+          <mat-slide-toggle
+                  [color]="color"
+                  [checked]="checked"
+                  [disabled]="disabled">
+                Followers
+            </mat-slide-toggle>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-slide-toggle
+                  [color]="color"
+                  [checked]="checked"
+                  [disabled]="disabled">
+                Likes
+            </mat-slide-toggle>
+        </mat-list-item>
+      </mat-nav-list>
+    </section>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
